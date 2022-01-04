@@ -171,7 +171,7 @@ tourSchema.pre(/^find/, function (next) {
 /* Runs when query is completed. */
 tourSchema.post(/^find/, function (docs, next) {
   console.log(`Query took ${Date.now() - this.start} milliseconds.`);
-  console.log("No. of documents: ", docs.length);
+  // console.log("No. of documents: ", docs.length);
   next();
 });
 

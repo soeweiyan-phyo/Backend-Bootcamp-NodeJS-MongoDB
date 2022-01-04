@@ -60,7 +60,6 @@ exports.login = catchAsync(async (req, res, next) => {
 
   /* 2) Check if user exists and password is correct. */
   /* Select password to show password which select property is set to false. */
-  console.log(email);
   const user = await User.findOne({ email }).select("+password");
 
   /* Email and password checked together to prevent hacker from knowing the
