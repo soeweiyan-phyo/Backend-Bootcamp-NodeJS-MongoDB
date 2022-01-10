@@ -8979,9 +8979,7 @@ var updateData = /*#__PURE__*/function () {
 
             // Reload page if settings are successfully updated.
             if (result.data.status === "success") {
-              (0, _alerts.showAlert)("success", "Data updated successfully."); // window.setTimeout(() => {
-              //   location.assign("/me");
-              // }, 1500);
+              (0, _alerts.showAlert)("success", "Data updated successfully.");
             }
 
             _context.next = 10;

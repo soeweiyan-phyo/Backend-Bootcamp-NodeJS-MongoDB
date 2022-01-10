@@ -12,9 +12,6 @@ export const updateData = async (name, email) => {
     // Reload page if settings are successfully updated.
     if (result.data.status === "success") {
       showAlert("success", "Data updated successfully.");
-      // window.setTimeout(() => {
-      //   location.assign("/me");
-      // }, 1500);
     }
   } catch (err) {
     showAlert("error", err.response.data.message);
