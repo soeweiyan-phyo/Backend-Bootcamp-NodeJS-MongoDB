@@ -50,7 +50,7 @@ if (userPasswordForm) {
     e.preventDefault();
 
     // Notifying user that the password is being updated.
-    // document.querySelector('.btn--save-password').textContent = 'Updating...';
+    document.querySelector('.btn--save-password').textContent = 'Updating...';
 
     const passwordCurrent = document.getElementById('password-current').value;
     const password = document.getElementById('password').value;
@@ -61,7 +61,7 @@ if (userPasswordForm) {
       'password'
     );
 
-    // document.querySelector('.btn--save-password').textContent = 'Save Password';
+    document.querySelector('.btn--save-password').textContent = 'Save Password';
 
     // Remove password from text boxes.
     document.getElementById('password-current').value = '';
